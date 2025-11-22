@@ -66,7 +66,7 @@ const Index = () => {
 
   const initiateRazorpayPayment = (formData: FormData) => {
     const options = {
-      key: "rzp_test_YOUR_KEY_HERE", // Replace with actual Razorpay key
+      key: "rpz_test_RiQbB3gt6WF2Wv",
       amount: 29900, // ₹299 in paise
       currency: "INR",
       name: "Scholarship Portal",
@@ -85,7 +85,7 @@ const Index = () => {
 
         // Send to Google Sheets
         try {
-          await fetch("YOUR_GOOGLE_APPS_SCRIPT_URL", {
+          await fetch("https://script.google.com/macros/s/AKfycbziC0vGXDwff0PIswmRyjl17pIE8s5jhzGRTQdbKzKQzCJexFddJEQ53P90H1PCy-L1cw/exec", {
             method: "POST",
             mode: "no-cors",
             headers: { "Content-Type": "application/json" },
